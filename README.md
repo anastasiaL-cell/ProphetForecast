@@ -57,3 +57,9 @@ Results
 Among all evaluated models, Linear Regression and the tuned XGBoost model achieved the best overall forecasting performance on this dataset. Statistical models provided reasonable baseline results, while the LSTM model was less effective because of the limited amount of training data.
 
 Although Linear Regression achieved the lowest RMSE and the highest R², visual inspection of the forecast revealed unrealistic long-term extrapolation. Since forecasting models should not only minimize prediction error but also produce plausible future trends, the tuned XGBoost model was selected as the champion model. It achieved competitive error metrics while generating substantially more realistic forecasts.
+
+## Model Tracking and Deployment
+
+This project uses **MLflow** to track experiments, compare forecasting models, and log model parameters, evaluation metrics (MAE, RMSE, and R²), and trained models. This enables reproducible experiments and simplifies champion model selection.
+
+The final champion model (**Tuned XGBoost**) is deployed using **Streamlit**, providing an interactive web application that allows users to visualize historical sales data and generate sales forecasts through an intuitive interface.
