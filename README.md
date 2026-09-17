@@ -56,7 +56,7 @@ Tuned XGBoost provided competitive metrics with more stable forecast behavior an
 
 ### Champion Model – Tuned XGBoost
 
-![Tuned XGBoost - Actual vs Predicted](images/xgboost_forecast.png)
+<img width="1437" height="670" alt="Tuned XGBoost - Actual vs Predicted" src="https://github.com/user-attachments/assets/8b0a2082-c404-4061-bcd0-7389716577e0" />
 
 The tuned XGBoost model follows the main sales patterns and captures recurring peaks more effectively while avoiding the unstable long-term extrapolation observed with Linear Regression.
 
