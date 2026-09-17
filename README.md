@@ -67,3 +67,10 @@ The tuned LSTM showed clear underfitting, demonstrating that increased model com
 **MLflow** was used to track experiments, model parameters, evaluation metrics, and trained models.
 
 The final **Tuned XGBoost** model was deployed with **Streamlit** as an interactive application for visualizing historical sales data and generating forecasts.
+
+### Streamlit Application
+
+The final Tuned XGBoost model was integrated into an interactive Streamlit application displaying historical sales data, model predictions, and performance metrics.
+
+<img width="1822" height="851" alt="Streamlit Sales Forecasting App" src="https://github.com/user-attachments/assets/25ea0ff0-056e-42af-88bd-e5562cc1c8fe" />
+
