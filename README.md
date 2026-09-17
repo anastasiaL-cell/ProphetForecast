@@ -72,5 +72,5 @@ The final **Tuned XGBoost** model was deployed with **Streamlit** as an interact
 
 The final Tuned XGBoost model was integrated into an interactive Streamlit application displaying historical sales data, model predictions, and performance metrics.
 
-<img width="1822" height="851" alt="Streamlit Sales Forecasting App" src="https://github.com/user-attachments/assets/25ea0ff0-056e-42af-88bd-e5562cc1c8fe" />
+<img width="1935" height="1159" alt="streamlit_sales_forecasting_app" src="https://github.com/user-attachments/assets/6849a95b-4b49-42e7-b70b-bcd9ac7ade5c" />
 
