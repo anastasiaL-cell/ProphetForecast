@@ -3,7 +3,7 @@ Project Overview
 
 End-to-end time-series forecasting project comparing statistical, machine learning, and deep learning approaches for daily retail sales prediction. Includes feature engineering, hyperparameter optimization, MLflow experiment tracking, champion model selection, and Streamlit deployment.
 
-# Tech Stack
+### Tech Stack
 
 Python | Pandas | NumPy | scikit-learn | XGBoost | Prophet | Statsmodels | TensorFlow/Keras | Hyperopt | MLflow | Streamlit | Matplotlib
 
