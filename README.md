@@ -1,6 +1,8 @@
 Sales Forecasting Project
 Project Overview
 
+End-to-end time-series forecasting project comparing statistical, machine learning, and deep learning approaches for daily retail sales prediction. Includes feature engineering, hyperparameter optimization, MLflow experiment tracking, champion model selection, and Streamlit deployment.
+
 This project focuses on forecasting daily unit sales using statistical, machine learning, and deep learning approaches. The objective was to compare different forecasting techniques and evaluate their predictive performance on unseen data.
 
 Data Preparation
