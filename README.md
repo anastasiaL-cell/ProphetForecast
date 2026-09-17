@@ -54,16 +54,32 @@ Mean Absolute Error (MAE)
 Root Mean Squared Error (RMSE)
 Coefficient of Determination (R²)
 
-Forecasts were visualized and compared with the actual sales values to assess prediction quality.
+### Model Performance Comparison
 
-Results
+| Model | MAE | RMSE | R² |
+|---|---:|---:|---:|
+| Linear Regression | 90.85 | 134.22 | 0.5028 |
+| Random Forest | 88.88 | 141.29 | 0.4490 |
+| XGBoost | 91.40 | 143.47 | 0.4319 |
+| Tuned XGBoost | 89.77 | 136.31 | 0.4872 |
+| ARIMA | 144.33 | 186.45 | 0.0405 |
+| Exponential Smoothing | 98.43 | 150.41 | 0.3756 |
+| SARIMA | 98.89 | 151.02 | 0.3705 |
+| Prophet | 98.36 | 150.47 | 0.3751 |
+| Tuned LSTM | 141.30 | 188.45 | 0.0198 |
 
-Among all evaluated models, Linear Regression and the tuned XGBoost model achieved the best overall forecasting performance on this dataset. Statistical models provided reasonable baseline results, while the LSTM model was less effective because of the limited amount of training data.
+Forecasts were also visually compared with actual sales values to assess prediction quality.
 
-Although Linear Regression achieved the lowest RMSE and the highest R², visual inspection of the forecast revealed unrealistic long-term extrapolation. Since forecasting models should not only minimize prediction error but also produce plausible future trends, the tuned XGBoost model was selected as the champion model. It achieved competitive error metrics while generating substantially more realistic forecasts.
+## Results
+
+Linear Regression and Tuned XGBoost showed the strongest overall performance. While Linear Regression achieved the lowest RMSE and highest R², its long-term forecasts showed unrealistic extrapolation. Tuned XGBoost provided competitive metrics with more stable forecast behavior and was therefore selected as the champion model.
+
+### Champion Model – Tuned XGBoost
+
+<img width="1437" height="670" alt="Tuned XGBoost - Actual vs Predicted" src="https://github.com/user-attachments/assets/0b932314-a198-45b5-ab02-86913b256883" />
 
 ## Model Tracking and Deployment
 
-This project uses **MLflow** to track experiments, compare forecasting models, and log model parameters, evaluation metrics (MAE, RMSE, and R²), and trained models. This enables reproducible experiments and simplifies champion model selection.
+MLflow was used to track experiments, model parameters, evaluation metrics, and trained models.
 
-The final champion model (**Tuned XGBoost**) is deployed using **Streamlit**, providing an interactive web application that allows users to visualize historical sales data and generate sales forecasts through an intuitive interface.
+The final Tuned XGBoost model was deployed with Streamlit as an interactive application for visualizing historical sales data and generating forecasts.
